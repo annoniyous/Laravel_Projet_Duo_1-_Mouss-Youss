@@ -1,6 +1,6 @@
  <!-- ======= Why Us Section ======= -->
  <section id="why-us" class="why-us">
-    <div class="container mt-5 pt-5">
+    <div class="container ">
 
       <div class="row">
 

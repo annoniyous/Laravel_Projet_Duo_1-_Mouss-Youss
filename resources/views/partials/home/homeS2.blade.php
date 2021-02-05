@@ -6,7 +6,7 @@
     <section id="about" class="about">
       <div class="container">
 
-        <div class="row content">
+        <div class="row content mb-5 pb-5">
           <div class="col-lg-6">
             <h2>Eum ipsam laborum deleniti velitena</h2>
             <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assum perenda sruen jonee trave</h3>
