@@ -30,10 +30,11 @@
 <body>
 
     @include('partials/navBar')
-
-        @yield('content')
-
+ 
+    @yield('content')
+    
     @include('partials/footer')
+
 
 
 

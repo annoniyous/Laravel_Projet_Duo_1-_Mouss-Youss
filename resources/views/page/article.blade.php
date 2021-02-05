@@ -1,4 +1,4 @@
-@extends('tempate/main');
+@extends('template/main');
 
 @section('content')
 
