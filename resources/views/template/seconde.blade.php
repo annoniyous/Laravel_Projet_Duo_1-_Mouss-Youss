@@ -30,9 +30,10 @@
 <body>
 
     @include('partials/navBar2')
- 
+
+    <div class="container mt-5">
     @yield('content')
-    
+    </div>  
     @include('partials/footer')
 
 

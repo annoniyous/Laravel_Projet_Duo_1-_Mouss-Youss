@@ -1,8 +1,8 @@
 
-@extends('template/seconde');
+@extends('template/seconde')
 
 @section('content')
 
-    @include('partials/form/form')
+    @include('BackOffice/page/bHomeListe1')
     
 @endsection
