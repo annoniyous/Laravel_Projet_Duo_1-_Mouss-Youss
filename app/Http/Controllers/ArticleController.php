@@ -12,6 +12,7 @@ class ArticleController extends Controller
 
         $articleDynamic =Article_dynamic::all();
        
+        
 
         
         return view('page/article', compact('articleDynamic'));

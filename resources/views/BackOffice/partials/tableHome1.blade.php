@@ -19,7 +19,16 @@
                 <td>{{$item->texte}}</td>
                 <td>{{$item->created_at}}</td>
                 <td>{{$item->updated_at}}</td>
+
+                <td>
+                  <form action="/delete1/{{$item->id}}" method="POST">
+                    @csrf
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                  </form>
+                 
+                </td>
             </tr>
+            
         @endforeach
         
     </tbody>

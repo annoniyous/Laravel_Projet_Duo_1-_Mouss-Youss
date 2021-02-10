@@ -44,6 +44,14 @@ class BackController extends Controller
         return redirect()->back();
     }
 
+    public function destroy1($id){
+        
+        $destroy = Home_1liste::find($id);
+        $destroy->delete();
+        return redirect()->back();
+    
+    }
+
 
 
 

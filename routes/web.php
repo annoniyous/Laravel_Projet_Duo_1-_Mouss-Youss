@@ -28,3 +28,6 @@ Route::get('/back', [BackController ::class,'index'])->name('back');
 Route::get('/HomeListe2', [BackController ::class,'index2'])->name('HomeListe2');
 Route::post('/ajouter', [BackController ::class,'store']);
 Route::post('/ajouter2', [BackController ::class,'store2']);
+
+// delet
+Route::post('/delete1/{id}',[BackController ::class,'destroy1']);
