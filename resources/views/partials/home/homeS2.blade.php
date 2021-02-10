@@ -1,34 +1,35 @@
-
-
 <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
+    <section class="about">
+        <div class="container">
 
-        <div class="row content">
-          <div class="col-lg-6">
-            <h2>Eum ipsam laborum deleniti velitena</h2>
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assum perenda sruen jonee trave</h3>
-            <img width="400px" src={{asset("img/portfolio-3.jpg")}} alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0">
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-            </p>
-            <ul>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequa</li>
-              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</li>
-            </ul>
-            <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-          </div>
+            <div class="row content mb-5 pb-5">
+                <div class="col-lg-6">
+                    <h2>{{ $homeStatic[1]->titre }}</h2>
+                    <h3>{{ $homeStatic[1]->subtitle }}</h3>
+                    <img width="400px" src={{ asset('img/' . $homeStatic[1]->img) }} alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0">
+                    <p>
+                        {{ $homeStatic[1]->p1 }}
+                    </p>
+
+                    <ul>
+
+                        @foreach ($homeListe2 as $item)
+
+                            <li><i class="ri-check-double-line"></i> {{ $item->texte }}</li>
+
+                        @endforeach
+
+
+                    </ul>
+                    <p class="font-italic">
+                        {{ $homeStatic[1]->p2 }}
+                    </p>
+                </div>
+            </div>
+
         </div>
-
-      </div>
     </section><!-- End About Section -->

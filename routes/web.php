@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\BackController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
@@ -15,21 +17,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',[HomeController::class,'index'])->name('home');
+Route::get('/', [HomeController::class,'index'])->name('home');
+
+Route::get('/article', [ArticleController::class,'index'])->name('article');
+
+Route::get('/contact', [ContactController ::class,'index'])->name('contact');
 
 
-
-
-Route::get('/contact',[ContactController::class,'index'])->name('contact');
-// Route::get('/create',[ContactController::class,'create']);
-// Route::post('/contact',[ContactController::class,'store']);
-
-
-
-
-Route::get('/article', function () {
-    return view('page.article');
-});
-Route::get('/back', function () {
-    return view('page.backOffice');
-});
+Route::get('/back', [BackController ::class,'index'])->name('back');
+Route::get('/HomeListe2', [BackController ::class,'index2'])->name('HomeListe2');
+Route::post('/ajouter', [BackController ::class,'store']);
+Route::post('/ajouter2', [BackController ::class,'store2']);
+Route::post('/delete2/{id}',[BackController ::class,'destroy']);

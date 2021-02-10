@@ -1,9 +1,9 @@
 
 
  <!-- ======= Footer ======= -->
- <footer id="footer">
+ <footer id="footer ">
 
-    <div class="container d-md-flex py-4 fixed-bottom">
+    <div class="container d-md-flex py-4 ">
 
       <div class="mr-md-auto text-center text-md-left">
         <div class="copyright">

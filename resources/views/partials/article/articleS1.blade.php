@@ -1,34 +1,34 @@
  <!-- ======= Why Us Section ======= -->
  <section id="why-us" class="why-us">
-    <div class="container mt-5 pt-5">
+     <div class="container ">
 
-      <div class="row">
+         <div class="row mt-5">
 
-        <div class="col-lg-4">
-          <div class="box">
-            <span>01</span>
-            <h4>Lorem Ipsum</h4>
-            <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
-          </div>
-        </div>
 
-        <div class="col-lg-4 mt-4 mt-lg-0">
-          <div class="box">
-            <span>02</span>
-            <h4>Repellat Nihil</h4>
-            <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
-          </div>
-        </div>
+             @foreach ($articleDynamic as $item)
 
-        <div class="col-lg-4 mt-4 mt-lg-0">
-          <div class="box">
-            <span>03</span>
-            <h4> Ad ad velit qui</h4>
-            <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
-          </div>
-        </div>
+                 <div class="col-lg-4">
+                     <h3>{{ $item->titre }}</h3>
+                     <div class="box">
+                         <span>{{ $item->numero }}</span>
+                         <h4>{{ $item->subtitle }}</h4>
+                         <p>{{ $item->texte }}</p>
+                     </div>
+                 </div>
 
-      </div>
+              @if ($loop->iteration % 3 === 0)
 
-    </div>
-  </section><!-- End Why Us Section -->
+                  </div>
+                  <div class="row">
+
+             @endif
+
+             @endforeach
+
+
+
+
+         </div>
+
+     </div>
+ </section><!-- End Why Us Section -->
