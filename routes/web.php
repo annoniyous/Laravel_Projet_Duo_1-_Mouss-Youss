@@ -26,8 +26,21 @@ Route::get('/contact', [ContactController ::class,'index'])->name('contact');
 
 Route::get('/back', [BackController ::class,'index'])->name('back');
 Route::get('/HomeListe2', [BackController ::class,'index2'])->name('HomeListe2');
+Route::get('/bArticle', [BackController ::class,'index3'])->name('bArticle');
+
 Route::post('/ajouter', [BackController ::class,'store']);
 Route::post('/ajouter2', [BackController ::class,'store2']);
+Route::post('/ajouterArticle', [BackController ::class,'storeArticle']);
 
-// delet
+// delet H1
 Route::post('/delete1/{id}',[BackController ::class,'destroy1']);
+
+// delet Article
+Route::post('/deleteArticle/{id}',[BackController ::class,'destroyArticle']);
+
+// show H1
+Route::get('/liste-show/{id}',[BackController ::class,'show']);
+
+
+// show article
+Route::get('/article-show/{id}',[BackController ::class,'showArticle']);

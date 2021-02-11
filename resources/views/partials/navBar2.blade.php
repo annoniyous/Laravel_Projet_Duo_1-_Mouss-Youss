@@ -14,6 +14,9 @@
           <a class="nav-link" href="/HomeListe2">Home Liste 2</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="/bArticle">Article</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link bg-success" href="/">Retour Home</a>
         </li>
       </ul>
