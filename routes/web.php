@@ -44,3 +44,4 @@ Route::get('/liste-show/{id}',[BackController ::class,'show']);
 
 // show article
 Route::get('/article-show/{id}',[BackController ::class,'showArticle']);
+Route::post('/delete2/{id}',[BackController ::class,'destroy']);

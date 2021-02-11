@@ -8,6 +8,7 @@ use App\Models\Home_1liste;
 use App\Models\Home_2liste;
 
 use Illuminate\Http\Request;
+use App\Models\Contacts;
 
 class HomeController extends Controller
 {

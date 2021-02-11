@@ -103,6 +103,13 @@ class BackController extends Controller
         return view('BackOffice/show/showArt', compact('showArticle'));
     }
 
+    public function destroy($id){
+        
+            $destroy = Home_2liste::find($id);
+            $destroy->delete();
+            return redirect()->back();
+        
+    }
 
 
 
